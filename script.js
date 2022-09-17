@@ -66,3 +66,24 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+var color;
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+color = ['#ffcccc', '#ff0000', '#ffff00'];
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  event.target.style.backgroundColor = randomMember(color);
+  event.target.style.color = '#006600';
+
+});
