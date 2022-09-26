@@ -103,3 +103,21 @@ document.getElementById('pork').addEventListener('click', (event) => {
   element_list3.appendChild(new_li3);
 
 });
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+
+document.getElementById('idea_button').addEventListener('click', (event) => {
+  let element_idea_p = document.getElementById('idea_p');
+  element_idea_p.innerText = getNumberOrString(document.getElementById('idea_input').value);
+
+});
