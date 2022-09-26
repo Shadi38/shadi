@@ -79,11 +79,3 @@ function randomMember(arr) {
 }
 
 
-color = ['#ffcccc', '#ff0000', '#ffff00'];
-
-
-document.getElementById('button').addEventListener('click', (event) => {
-  event.target.style.backgroundColor = randomMember(color);
-  event.target.style.color = '#006600';
-
-});
