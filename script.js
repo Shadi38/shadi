@@ -77,5 +77,29 @@ function randomMember(arr) {
   // Return a random member of the array
   return arr[randomInt(arr.length)]
 }
+document.getElementById('chicken').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_li = document.createElement('li');
+  new_li.innerText = 'chicken';
 
+  element_list.appendChild(new_li);
 
+});
+
+document.getElementById('lamb').addEventListener('click', (event) => {
+  let element_list2 = document.getElementById('list');
+  let new_li2 = document.createElement('li');
+  new_li2.innerText = 'lamb';
+
+  element_list2.appendChild(new_li2);
+
+});
+
+document.getElementById('pork').addEventListener('click', (event) => {
+  let element_list3 = document.getElementById('list');
+  let new_li3 = document.createElement('li');
+  new_li3.innerText = 'pork';
+
+  element_list3.appendChild(new_li3);
+
+});
