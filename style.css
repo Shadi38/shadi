@@ -97,6 +97,6 @@ hr{
 .c-site-footer h2 li {
   margin-bottom: 40px;
 }
-#java  h2 {
-color: #d8d8d8;
+#java h2,li  {
+color: gray;
 }
